@@ -3,7 +3,7 @@ const userDetailsRoute = require('./routes/user-details/user_details.route')
 
 const router = express.Router();
 
-router.use('/', (req, res) => {
+router.use('/fetch', (req, res) => {
     res.send('hello, athena server. your build is success')
 })
 
