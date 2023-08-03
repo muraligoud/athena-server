@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "name": "athena-server",
+    "builds": [{
+        "src": "server.js",
+        "use": "@vercel/node"
+    }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "/server.js"
+    }]
+}
